@@ -18,6 +18,9 @@ header{
 .masthead{
    font-family: 'New Rocker', cursive;
 }
+.top-buffer{
+    margin-top: 20px;
+}
 .main-container {
   width: 100%;
   max-width: 1200px;
@@ -65,7 +68,8 @@ section {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Suez One', serif;}
+ font-family: 'New Rocker', cursive;
+}
 
 .hidden {
   display: none; }
