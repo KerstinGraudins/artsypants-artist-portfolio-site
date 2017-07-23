@@ -16,7 +16,9 @@
 <!-- javascript liabrary from https://developers.google.com-->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
      <script src= "js/script.js"></script>
-
+<!-- ekko lightbox stuff-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.css"/>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.2.0/ekko-lightbox.min.js"></script>
 <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -63,44 +65,43 @@
             </li>
         </ul>
     </nav>
- <div id="gallery">
-    <ul>
-	<li>
-      <a class="rounded float-left" href="images/apskull.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="images/thskull.jpg" alt=""/></a>		  
-	  </li>
-	  
-	  <li>
-      <a class="example-image-link" href="images/apskull.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="images/thskull.jpg" alt=""/></a>			  
-	  </li>
-	  
-	  <li>
-      <a class="example-image-link" href="images/apskull.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="images/thskull.jpg" alt=""/></a>			  
-	  </li>
-	  
-	  <li>
-      <a class="example-image-link" href="images/apskull.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="images/thskull.jpg" alt=""/></a>				 
-	  </li>
-	 
-	 <li>
-	   <a class="example-image-link" href="images/apskull.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="images/thskull.jpg" alt=""/></a>				
-	   </li>
-	 
-	 <li>
-	   <a class="example-image-link" href="images/apskull.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="images/thskull.jpg" alt=""/></a>			 
-		</li>
-		
-		<li>
-		 <a class="example-image-link" href="images/apskull.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="images/thskull.jpg" alt=""/></a>			  
-		 </li>
-		 
-		 <li>
-		 <a class="example-image-link" href="images/apskull.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="images/thskull.jpg" alt=""/></a>		
-		  </li>
-		 
-		  </ul>
-		  </div>    
+<!-- begining of light box image gallery-->
+    <div class="row">
+    <div class="offset-md-2 col-md-8">
+        <div class="row">
+            <a href="images/apskull.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="images/thskull.jpg" class="img-fluid">
+            </a>
+             <a href="images/apskull.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="images/thskull.jpg" class="img-fluid">
+            </a>
+             <a href="images/apskull.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="images/thskull.jpg" class="img-fluid">
+            </a>
+        </div>
+        <div class="row">
+             <a href="images/apskull.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="images/thskull.jpg" class="img-fluid">
+            </a>
+            <a href="images/apskull.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="images/thskull.jpg" class="img-fluid">
+            </a>
+             <a href="images/apskull.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="images/thskull.jpg" class="img-fluid">
+            </a>
+        </div>
+    </div>
+</div> 
+     
+     
+     
+<!-- java script for light box-->
+<script>
+     $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });    
+</script>
  </body>   
- <!-- javascript for the light box-->
-     <script type="text/javascript" src="js/lightbox.js"></script>
-     <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>   
+ 
 </html>
