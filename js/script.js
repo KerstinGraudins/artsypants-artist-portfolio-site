@@ -2,9 +2,7 @@ $(function (){
     var $nav = $('#nav');
     var $subMenu = $('#sub-menu');
     
-    //hide sub-menu
-   // $('#close').hide();
-   // $subMenu.hide();
+   
     
     //for mobile-only icons
     $('#mobile-only').on('click', function(){
